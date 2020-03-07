@@ -6,7 +6,7 @@ type Query {
 }
 
 type Mutation {
-  updateUser(user: UserInput!): Boolean
+  updateUser(user: UserInput!): User!
 }
 
 schema {
