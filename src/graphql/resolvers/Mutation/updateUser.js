@@ -8,7 +8,7 @@ export default async function User(root, { user }, { ctx }, info) {
 
   const userData = await getUser(user.id);
   const payload = { ...userData, ...user };
-console.log(payload)
+
   await setUser(payload);
   const updated = await getUser(user.id);
 
